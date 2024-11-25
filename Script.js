@@ -8,5 +8,5 @@ form.addEventListener('submit' , (e) => {
     const json = JSON.stringify(obj);
     localStorage.setItem('form', json);
 
-    location.href = "confirm.html";
+    location.href = "https://andresmartinez317.github.io/JSAssingment3/confirm.html";
 })
