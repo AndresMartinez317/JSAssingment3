@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 400px;
+            height: 400px;
+            display: block;
+            margin: auto;
+        }
+        header{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <Header>Order your smoothie </Header>
+    <main>
+    <form>
+        <label for="Ndrinks">Number of drinks </label>
+        <input type="number" id="Ndrinks" name="Ndrinks" placeholder="how many drinks" required><br>
+        <label for="name ">Name </label>
+        <input type="text" id="name" name ="name"placeholder="enter your name" required><br>
+        <label for="Size"> Select size </label><br>
+        <input type="radio" id="Size" name="Size" value="Small"required>
+        <label for="Small">small</label><br>
+        <input type="radio" id="Size" name="Size" value="Medium" >
+        <label for="medium">medium</label><br>
+        <input type="radio" id="Size" name="Size" value="Large" >
+        <label for="large">Large</label><br>
+        <label for="Flavor">Select flavor</label><br>
+        <input type="radio" id="flavor" name="flavor" value="Vanilla"required>
+        <label for="square"> Vanilla</label><br>
+        <input type="radio" id="flavor" name="flavor" value="Chocolate">
+        <label for="circle">Chocolate</label><br>
+        <input type="radio" id="flavor" name="flavor" value="mix">
+        <label for="circle">Mix</label><br>
+        <label for="Topping">choose 1 topping</label><br>
+        <select size="9" name="topping " multiple required>
+            <option value="choco_chips">choco chips </option>
+            <option value="cacao">cacao</option>
+            <option value="cinnamon">cinnamon</option>
+            <option value="Caramel">Caramel</option>
+            <option value="Cream">Cream</option>
+            <option value="Mint">Mint</option>
+        </select><br>
+        <label for="eat">dine in or take out</label><br>
+        <input type="radio"id="dine" name="dine" value="dine_in" required>
+        <label for="dine">dine in </label>
+        <input type="radio"id="dine" name="dine" value="Take_out" >
+        <label for="out">take out</label><br>
+        <div>
+            <input type="reset">
+            <input type="submit">
+        </div>
+    </form>
+    <script src="script.js"></script>
+</main>
+</body>
+</html>
